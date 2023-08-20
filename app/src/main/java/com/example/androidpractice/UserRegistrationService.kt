@@ -1,7 +1,9 @@
 package com.example.androidpractice
 
+import javax.inject.Inject
 
-class UserRegistrationService(
+
+class UserRegistrationService @Inject constructor(
     private val userRepository: UserRepository,
     private val emailService: EmailService
 ){
